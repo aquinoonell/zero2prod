@@ -1,0 +1,5 @@
+[advisories]
+ignore = [
+    { id = "RUSTSEC-2026-0258", reason = "h2 0.3 is required by actix-http 3.18.13 (latest); the fix only exists in h2 0.4. Low severity. Remove once actix-web moves to h2 0.4." },
+]
+
