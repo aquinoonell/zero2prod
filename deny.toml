@@ -1,5 +1,8 @@
 [advisories]
 ignore = [
-    { id = "RUSTSEC-2026-0258", reason = "h2 0.3 is required by actix-http 3.18.13 (latest); the fix only exists in h2 0.4. Low severity. Remove once actix-web moves to h2 0.4." },
+    { id = "RUSTSEC-2026-0258", reason = "h2 0.3 is required by actix-http 3.18.13; fix is in h2 0.4." },
+    { id = "RUSTSEC-2026-0391", reason = "zstd 0.13 is required by actix-http 3.18.13; fix is in zstd 0.14. Remove when actix-web upgrades." },
+    { id = "RUSTSEC-2026-0398", reason = "zstd-safe 7 is pulled by zstd 0.13 via actix-http; fix is zstd-safe 8.2." },
+    { id = "RUSTSEC-2026-0403", reason = "same zstd-safe 7 pin via actix-http." },
+    { id = "RUSTSEC-2026-0410", reason = "zstd-sys 2.1.1 is pulled by zstd-safe 7 via actix-http; fix is 2.1.2." },
 ]
-
